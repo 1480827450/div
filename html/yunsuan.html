@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			//document.write("Hello world!");
+
+			var d = new Date();
+			document.write(d);
+			var time = d.getHours();
+
+			if(8<=time<=12) {
+				document.write("上課");
+			}else{
+				document.write("放学");
+			}
+			
+			var count1 = prompt('請輸入第一個數字:','');
+			var count2 = prompt('請輸入第二個數字:','');
+			var opener = prompt('請輸入運算符:','');
+			
+			if(opener=='+'){
+				alert(parseInt(count1)+parseInt(count2));
+			}if(opener=='-'){
+				alert(parseInt(count1)-parseInt(count2));
+			}if(opener=='*'){
+				alert(parseInt(count1)*parseInt(count2));
+			}if(opener=='/'){
+				alert(parseInt(count1)/parseInt(count2));
+			}
+			
+		</script>
+	</body>
+
+</html>
